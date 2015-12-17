@@ -32,12 +32,12 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       }
     }
  
-    if (!AuthService.isAuthenticated()) {
-      if (next.name !== 'login') {
-        event.preventDefault();
-        $state.go('login');
-      }
-    }
+    // if (!AuthService.isAuthenticated()) {
+    //   if (next.name !== 'login') {
+    //     event.preventDefault();
+    //     $state.go('login');
+    //   }
+    // }
   });
 });
 
